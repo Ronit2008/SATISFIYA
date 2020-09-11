@@ -16,11 +16,13 @@ function setup(){
     
 
     ground = Bodies.rectangle(200,390,200,20,ground_options);
+   ground.shapeColor="green";
     World.add(world,ground);
    var options={
        restitution:1
    }
     ball = Bodies.circle(200,100,20,options);
+    ball.shapeColor="red";
     World.add(world,ball)
     console.log(ground);
 }
